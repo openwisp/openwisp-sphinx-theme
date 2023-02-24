@@ -1,0 +1,5 @@
+1.0.0
+
+The first line of this file declares the openwisp-sphinx-theme package
+version.  It is read by setup.py and lib/openwisp/sphinx/theme/__init__.py.
+All other lines are ignored.

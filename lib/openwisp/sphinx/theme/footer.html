@@ -1,0 +1,21 @@
+{% extends "sphinx_rtd_theme/footer.html" %}
+
+{% block extrafooter %}
+
+  <div class="copyright">
+    {%- if build_id and build_url %}
+      Build <a href="{{ build_url }}">{{ build_id }}</a>.
+    {%- elif commit %}
+      Revision <code>{{ commit }}</code>.
+    {%- endif %}
+    {%- if last_updated %}
+      Last updated on {{ last_updated }}.
+    {%- endif %}
+    </p>
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+    using <a href="https://pypi.org/project/openwisp-sphinx-theme/">our customised version</a> of a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">base theme</a> provided by
+    <a href="https://readthedocs.org">Read the Docs</a>.
+  </div>
+
+{% endblock %}
