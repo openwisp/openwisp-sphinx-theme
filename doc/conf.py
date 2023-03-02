@@ -1,5 +1,6 @@
 import os
 import sys
+
 sys.path.append(os.path.abspath("./demo/"))
 from openwisp.sphinx.theme import __version__ as theme_version
 
@@ -13,6 +14,7 @@ extensions = [
 
 # OpenWISP demo docs site configuration
 from datetime import date
+
 project = 'OpenWISP'
 copyright = f'2017-{date.today().year}, OpenWISP'
 author = 'OpenWISP Community'

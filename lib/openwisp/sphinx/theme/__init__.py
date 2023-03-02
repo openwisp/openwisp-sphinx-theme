@@ -1,10 +1,9 @@
 from pathlib import Path
 
-
 package_dir = Path(__file__).resolve().parent
-version_path = package_dir / "VERSION"
+version_path = package_dir / 'VERSION'
 
-with version_path.open(encoding = "utf-8") as version_file:
+with version_path.open(encoding='utf-8') as version_file:
     __version__ = version_file.readline().strip()
 
 

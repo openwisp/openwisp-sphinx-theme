@@ -1,14 +1,13 @@
 openwisp-sphinx-theme
 =====================
 
-A `Sphinx theme`_ for OpenWISP docs, based on `Read The Docs`_
+A `Sphinx theme`_ for OpenWISP docs, based on the `Read The Docs`_
 default theme (sphinx_rtd_theme_).
 
 **Live demo:** https://openwisp-sphinx-theme.readthedocs.io/en/latest/
 
 .. figure:: https://user-images.githubusercontent.com/56113566/221259494-d7f5ecb9-8ed2-4187-a3dc-8ae51ed1d324.png
   :align: center
-
 
 Installation
 ------------
@@ -20,12 +19,12 @@ installed with ``pip``:
 
     $ python3 -m pip install openwisp-sphinx-theme
 
-To use the theme in your Sphinx project, you will need to add the following to
-your ``conf.py`` file:
+To use the theme in your Sphinx project, you will need to
+add the following to your ``conf.py`` file:
 
 .. code:: python
 
-    # add this extension 
+    # add this extension
     extensions = [...,
     'openwisp.sphinx.theme',
     ...
