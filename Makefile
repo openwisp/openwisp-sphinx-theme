@@ -18,3 +18,15 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+clean:
+	rm -rf dist build
+
+build:
+	find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+	python setup.py sdist bdist_wheel
+
+upload:
+	twine upload -s dist/*
+
+publish: build upload clean
