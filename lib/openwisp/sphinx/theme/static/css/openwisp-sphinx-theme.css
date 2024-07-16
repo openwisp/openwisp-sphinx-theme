@@ -49,11 +49,11 @@ a:visited {
 .wy-nav-top i{
   color: #777;
 }
-.wy-nav-content a:not(.btn) {
+.wy-nav-content a:not(.btn,.toc-backref,.headerlink) {
   color: #880407;
   text-decoration: underline;
 }
-.wy-nav-content a:not(.btn):hover {
+.wy-nav-content a:not(.btn,.toc-backref,.headerlink):hover {
   color: #ab0b0f;
   text-decoration: none;
 }
@@ -216,9 +216,12 @@ article ul li li {
 }
 
 .rst-content code.literal, .rst-content tt.literal {
-    color: #4d0c0c;
-    white-space: normal;
-    background-color: #fcfcfc;
+  color: #880407;
+  white-space: normal;
+  background-color: #fcfcfc;
+}
+.rst-content a.download code.literal {
+  background-color: transparent;
 }
 
 footer p,
